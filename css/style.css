@@ -83,21 +83,35 @@ body {
     margin: 0px;
 }
 
-@media(max-width:767px){
-
-    .dash-header{
+@media (max-width: 767px) {
+    .dash-header {
         flex-direction: column;
         gap: 20px;
     }
-    .dash-wrapper{
-        grid-template-columns: 1fr;
-    }
-    .stats-grid{
+
+    .dash-wrapper {
         grid-template-columns: 1fr;
     }
 
-    .body-split{
+    .sidebar {
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar ul {
+        padding: 0;
+        list-style-position: inside;
+    }
+
+    .sidebar .logout {
+        margin-top: 20px;
+    }
+
+    .stats-grid {
         grid-template-columns: 1fr;
     }
 
+    .body-split {
+        grid-template-columns: 1fr;
+    }
 }
